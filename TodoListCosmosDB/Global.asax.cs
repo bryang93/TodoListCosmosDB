@@ -16,6 +16,7 @@ namespace TodoListCosmosDB
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DocumentDBRepository<TodoListCosmosDB.Models.Item>.Initialize();
         }
     }
 }
